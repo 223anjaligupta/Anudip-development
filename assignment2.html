@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festivals of India</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      animation: bgmove 10s infinite alternate;
+    }
+
+    @keyframes bgmove {
+      from { background: linear-gradient(to right, #ffecd2, #fcb69f); }
+      to { background: linear-gradient(to left, #c9ffbf, #ffafbd); }
+    }
+
+    header {
+      background: #ff5733;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      text-shadow: 2px 2px 5px black;
+      animation: slideDown 1.5s ease;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: yellow;
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #c0392b;
+    }
+
+    .festival {
+      background: white;
+      margin: 20px 0;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .festival:hover {
+      transform: scale(1.05);
+      box-shadow: 4px 4px 15px rgba(0,0,0,0.5);
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      display: block;
+      margin: 10px auto;
+      transition: transform 0.5s;
+    }
+    img:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      animation: fadeIn 2s ease;
+    }
+    table, th, td {
+      border: 2px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #ff5733;
+      color: white;
+    }
+    tr:hover {
+      background: #ffeaa7;
+      transition: 0.3s;
+    }
+
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎉 Festivals of India 🎊</h1>
+    <p>Unity in Diversity – Celebrating Cultures of Different States</p>
+  </header>
+
+  <nav>
+    <a href="#diwali">Diwali</a>
+    <a href="#pongal">Pongal</a>
+    <a href="#baisakhi">Baisakhi</a>
+    <a href="#onam">Onam</a>
+  </nav>
+
+  <section>
+    <div class="festival" id="diwali">
+      <h2>✨ Diwali (North India)</h2>
+      <p>Diwali, the festival of lights, is celebrated with diyas, sweets, and fireworks.</p>
+      <img src="dewali.webp" alt="Diwali">
+    </div>
+
+    <div class="festival" id="pongal">
+      <h2>🌾 Pongal (Tamil Nadu)</h2>
+      <p>Pongal is a harvest festival dedicated to the Sun God. People prepare a special dish called Pongal.</p>
+      <img src="pongal.jpg" alt="Pongal">
+    </div>
+
+    <div class="festival" id="baisakhi">
+      <h2>🥁 Baisakhi (Punjab)</h2>
+      <p>Baisakhi marks the harvest of Rabi crops and is celebrated with bhangra and gidda dance.</p>
+      <img src="baishakhi.webp" alt="Baisakhi">
+    </div>
+
+    <div class="festival" id="onam">
+      <h2>🌼 Onam (Kerala)</h2>
+      <p>Onam is a harvest festival featuring boat races, pookalam (flower rangoli), and traditional feasts.</p>
+      <img src="onam.jpg" alt="Onam">
+    </div>
+
+    <h2>📋 Quick Festival Overview</h2>
+    <table>
+      <tr>
+        <th>Festival</th>
+        <th>State</th>
+        <th>Main Highlight</th>
+      </tr>
+      <tr>
+        <td>Diwali</td>
+        <td>North India</td>
+        <td>Lights & Fireworks</td>
+      </tr>
+      <tr>
+        <td>Pongal</td>
+        <td>Tamil Nadu</td>
+        <td>Harvest & Pongal Dish</td>
+      </tr>
+      <tr>
+        <td>Baisakhi</td>
+        <td>Punjab</td>
+        <td>Bhangra Dance</td>
+      </tr>
+      <tr>
+        <td>Onam</td>
+        <td>Kerala</td>
+        <td>Boat Race & Pookalam</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Anjali | Assignment Webpage</p>
+  </footer>
+
+</body>
+</html>
